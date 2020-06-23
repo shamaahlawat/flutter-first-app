@@ -29,11 +29,15 @@ class Home extends StatelessWidget { //ITS OUR OWN CUSTOM WIDGET ,WE CAN RESUE I
     body:Center(
       // child: Text('HELLO NINJASSSS'), // FOR TEXT 
       //ways to render images
-      child:Image.asset('assets/shama.png'),
+      // child:Image.asset('assets/shama.png'),
     //   child:Image(
     //     // image: NetworkImage('https://scx2.b-cdn.net/gfx/news/hires/2019/2-nature.jpg'), //FOR NETWORK IMAGE
     //     // image:AssetImage('assets/shama.png') //why not working
     //     )
+    child:Icon(
+      Icons.airport_shuttle,
+      size:50.0
+    )
     ), //child of center widget
     floatingActionButton: FloatingActionButton(
       onPressed: () {},
