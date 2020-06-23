@@ -78,10 +78,29 @@ class Home extends StatelessWidget { //ITS OUR OWN CUSTOM WIDGET ,WE CAN RESUE I
     // ),
 
     //CONTAINER OTHER WAY
-    body:Padding(
-      padding:EdgeInsets.all(90.0),
-      child:Text('helllooooooooooo')
-    ),
+    // body:Padding(
+    //   padding:EdgeInsets.all(90.0),
+    //   child:Text('helllooooooooooo')
+    // ),
+
+    //ROW WIDGET
+
+    body: Row(
+      mainAxisAlignment:MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: <Widget>[
+        Text('HELLO'),
+        FlatButton(
+          onPressed: () {},
+         child: Text('Click me'),
+         color:Colors.amber,
+         ),
+         Container(
+           color:Colors.cyan,
+           padding:EdgeInsets.all(10.0),
+           child:Text('inside container')
+         )
+    ],), 
     floatingActionButton: FloatingActionButton(
       onPressed: () {},
       child:Text('click'),
