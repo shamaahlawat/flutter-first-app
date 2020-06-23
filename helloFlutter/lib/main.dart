@@ -103,34 +103,37 @@ class Home extends StatelessWidget { //ITS OUR OWN CUSTOM WIDGET ,WE CAN RESUE I
     // ],), 
 
     //COLUMN WIDGET
-     body:Column(
-       mainAxisAlignment: MainAxisAlignment.center,
-       crossAxisAlignment: CrossAxisAlignment.stretch,
-      //  crossAxisAlignment: ,
+     body:Row(
        children: <Widget>[
-         Row(
-           children: <Widget>[
-               Text('hello'),
-               Text('World')
-           ],
-         ),
-         Container(
-           padding: EdgeInsets.all(20.0),
-           color:Colors.pinkAccent,
-           child:Text('one')
-         ),
-          Container(
-           padding: EdgeInsets.all(30.0),
-           color:Colors.cyan,
-           child:Text('two')
-         ),
-          Container(
-           padding: EdgeInsets.all(40.0),
-           color:Colors.amber,
-           child:Text('three')
-         ),
-       ],
-     ),
+            Expanded(
+              child: Image.asset('assets/shama.png'),
+              flex:3
+            ),
+            Expanded(
+                flex:3,
+                child: Container(
+                padding:EdgeInsets.all(30.0),
+                color:Colors.cyan,
+                child:Text('1')
+              ),
+            ),
+            Expanded(
+                 flex:2,
+                child: Container(
+                padding:EdgeInsets.all(30.0),
+                color:Colors.green,
+                child:Text('2')
+              ),
+            ),
+            Expanded(
+                flex:1,
+                child: Container(
+                padding:EdgeInsets.all(30.0),
+                color:Colors.pinkAccent,
+                child:Text('3')
+              ),
+            )
+     ],),
 
     floatingActionButton: FloatingActionButton(
       onPressed: () {},
