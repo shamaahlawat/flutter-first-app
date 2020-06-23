@@ -34,10 +34,36 @@ class Home extends StatelessWidget { //ITS OUR OWN CUSTOM WIDGET ,WE CAN RESUE I
     //     // image: NetworkImage('https://scx2.b-cdn.net/gfx/news/hires/2019/2-nature.jpg'), //FOR NETWORK IMAGE
     //     // image:AssetImage('assets/shama.png') //why not working
     //     )
-    child:Icon(
-      Icons.airport_shuttle,
-      size:50.0
-    )
+    // child:Icon(
+    //   Icons.airport_shuttle,
+    //   size:50.0
+    // )
+
+    // BUTTONS 
+
+      //  child:RaisedButton(
+      //    onPressed: () {
+      //      print('you clicked me');
+      //    },
+      //    child:Text('ckick me'),
+      //    color:Colors.lightBlue
+      //  )
+
+      //  child:RaisedButton.icon(
+      //    onPressed: () {
+      //      print('you clicked me');
+      //    },
+      //    icon: Icon(
+      //      Icons.mail
+      //    ),
+      //    label:Text('mail me'),
+      //    color:Colors.amber,
+      //  )
+
+      child:IconButton(
+        icon: Icon(Icons.alternate_email),
+         onPressed: () {},
+         color: Colors.amber,)
     ), //child of center widget
     floatingActionButton: FloatingActionButton(
       onPressed: () {},
