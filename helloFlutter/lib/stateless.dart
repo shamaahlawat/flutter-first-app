@@ -9,14 +9,7 @@ void main() => runApp(MaterialApp( //material app is widget ,  //widgesta are th
   home: Home()
 ));
 
-class Home extends StatefulWidget { //ITS OUR OWN CUSTOM WIDGET ,WE CAN RESUE IT AGAIN AND AGAIN 
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-
-  int level = 0 ; 
+class Home extends StatelessWidget { //ITS OUR OWN CUSTOM WIDGET ,WE CAN RESUE IT AGAIN AND AGAIN 
   @override 
   Widget build(BuildContext context) { //USE TO DETECT CHANGE AND REFRESH OR HOT RESTART 
     return Scaffold(  // scafold widget has appBar property and its value is AppBar widget
@@ -121,8 +114,7 @@ class _HomeState extends State<Home> {
                 child: Container(
                 padding:EdgeInsets.all(30.0),
                 color:Colors.cyan,
-                child:Text('${level}',
-                style:TextStyle(letterSpacing: 2.0,color:Colors.pinkAccent[200],fontSize: 28.0))
+                child:Text('1')
               ),
             ),
             Expanded(
@@ -144,11 +136,7 @@ class _HomeState extends State<Home> {
      ],),
 
     floatingActionButton: FloatingActionButton(
-      onPressed: () {
-        setState((){ // to rebuilding function itself  , its rebuild new state
-               level += 1;
-        });
-      },
+      onPressed: () {},
       child:Text('click'),
       backgroundColor: Colors.red[600],
       ),
