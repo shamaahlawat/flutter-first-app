@@ -1,5 +1,5 @@
 
-//creating custom class to creat edifferent objects
+//creating custom class to creat edifferent objectss
 class Quote { // inside we need two properties , for text and author , its like a blueprint for object 
     String text;
     String author;
